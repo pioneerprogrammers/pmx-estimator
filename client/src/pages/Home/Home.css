@@ -1,0 +1,372 @@
+.hero-section {
+    font-family: 'Inter', sans-serif;
+}
+
+.site-logo {
+    display: block;
+    margin: 60px auto;
+}
+
+.hero-section>p {
+    margin: 0 auto;
+    max-width: 987px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+}
+
+.hero-flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.hero-flex-item {
+    flex-basis: 50%;
+}
+
+/* .hero-flex-item>img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+} */
+
+.hero-flex-item>div {
+    padding: 2rem 2rem;
+}
+
+.hero-flex-item>div>input {
+    height: 2.8rem;
+}
+
+.hero-flex-item>div>input,
+.hero-flex-item>div>textarea,
+.residential {
+    width: 100%;
+    margin-bottom: 21px;
+    margin-top: 8px;
+    background-color: white;
+    padding: .60em .75em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.005rem;
+    line-height: 1.5rem;
+    outline: 1px solid #848484;
+    color: #333;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.hero-flex-item>div>input:focus,
+.hero-flex-item>div>textarea:focus,
+.num-input:focus,
+.residential:focus {
+    outline: 2px solid #7478D3;
+}
+
+.estimate-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 214px;
+    background-color: #5CDD80;
+    /* background: linear-gradient(335deg, #7478D3, #3dff74);
+    border: 1px solid #000000; */
+    padding: 14px 0;
+    border-radius: 28px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.estimate-btn-container:hover {
+    background-color: #3dff74;
+}
+
+.estimate-btn {
+    background: transparent;
+    color: #3B3C54;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.estimating-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 214px;
+    background-color: #5CDD80;
+    padding: 14px 0;
+    border-radius: 28px;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 260px;
+    margin-bottom: 40px;
+}
+
+.estimating-btn {
+    background: transparent;
+    color: #3B3C54;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero-flex-item>div>input:-webkit-autofill,
+.hero-flex-item>div>input:-webkit-autofill:hover,
+.hero-flex-item>div>input:-webkit-autofill:focus,
+.hero-flex-item>div>input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    -webkit-text-fill-color: #333;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 9px;
+    margin-bottom: 22.5px;
+}
+
+.common-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+#inclusives {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.currency {
+    width: 45%;
+    padding: 12px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    outline: 1px solid #848484;
+    background-color: white;
+}
+
+.currency:focus {
+    outline: 2px solid #7478D3;
+}
+
+/* #currency {
+    margin-top: 20px;
+} */
+
+.num-input {
+    outline: 1px solid #848484;
+    width: 60px;
+    height: 42px;
+    padding: 5px;
+}
+
+.common-checkbox {
+    width: 24px;
+    height: 24px;
+}
+
+.common-checkbox[type=checkbox] {
+    accent-color: #7478D3;
+}
+
+/* ----------------------------------------
+------------------------------------------- */
+/* Table */
+
+.estimate-table-section {
+    max-width: 1080px;
+    margin: 40px auto;
+    padding: 0 3rem;
+}
+
+.estimate-table-section>h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #3B3C54;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 4px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #C2C2C2;
+}
+
+
+td,
+th {
+    border: 1px solid #C2C2C2;
+    text-align: left;
+    padding: 8px;
+    padding-left: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.risks {
+    margin: 20px 0;
+}
+
+.risks>h4 {
+    text-decoration: underline;
+}
+
+.risk {
+    margin: 8px 0 20px 24px;
+}
+
+.risk>li {
+    margin-top: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 4rem;
+    }
+
+    .hero-section>p {
+        max-width: 100%;
+        padding-left: 6.4rem;
+        padding-right: 6.4rem;
+    }
+
+    .hero-flex-item>div {
+        padding: 2rem 2.5rem;
+    }
+
+
+    /* table */
+    .estimate-table-section {
+        max-width: 100%;
+        padding: 0 6.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .hero-flex-container {
+        padding: 0 3rem;
+    }
+
+    .hero-section>p {
+        padding-left: 5.4rem;
+        padding-right: 5.4rem;
+    }
+
+    /* table */
+    .estimate-table-section {
+        padding: 0 5.5rem;
+    }
+}
+
+@media screen and (max-width: 927px) {
+    .currency {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .hero-flex-item>div {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-section>p {
+        padding-left: 4.4rem;
+        padding-right: 4.4rem;
+    }
+
+    /* table */
+    .estimate-table-section {
+        padding: 0 4.5rem;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .hero-flex-container {
+        display: block;
+        padding: 2rem 3.5rem 0 3.5rem;
+    }
+
+    .site-logo {
+        margin: 40px auto;
+    }
+
+    .hero-section>p {
+        padding-left: 7.4rem;
+        padding-right: 7.4rem;
+    }
+
+    .hero-flex-item {
+        margin-bottom: 50px;
+
+    }
+
+    .hero-flex-item>div {
+        padding: 0 4rem;
+    }
+
+    /* table */
+    .estimate-table-section {
+        padding: 8px 7.5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    .hero-section>p {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+
+    .hero-flex-item {
+        flex-basis: 100%;
+    }
+
+    .hero-flex-item:nth-child(2) {
+        flex-basis: 100%;
+    }
+
+    .hero-flex-item {
+        margin-bottom: 0;
+    }
+
+    .hero-flex-item>div {
+        padding: 0 1rem;
+    }
+
+    #currency {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+}

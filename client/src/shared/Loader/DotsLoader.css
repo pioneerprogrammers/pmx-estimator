@@ -1,0 +1,49 @@
+.dots-loader {
+    margin-top: -3px;
+}
+
+.dots-loader:after {
+    content: "....";
+    width: 0;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    overflow: hidden;
+    -webkit-animation: dots-loader-animation 1s infinite;
+    animation: dots-loader-animation 1s infinite;
+    color: #3B3C54;
+}
+
+@-webkit-keyframes dots-loader-animation {
+    0% {
+        width: 0em;
+    }
+
+    50% {
+        width: 1.5em;
+    }
+
+    100% {
+        width: 0em;
+    }
+}
+
+@keyframes dots-loader-animation {
+    0% {
+        width: 0em;
+    }
+
+    50% {
+        width: 1.2em;
+    }
+
+    100% {
+        width: 0em;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .dots-loader {
+        margin-top: -5px;
+    }
+}
