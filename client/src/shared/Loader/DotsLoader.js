@@ -3,7 +3,7 @@ import './DotsLoader.css';
 
 const DotsLoader = () => {
     return (
-        <div class="dots-loader"></div>
+        <div className='dots-loader'></div>
     )
 }
 

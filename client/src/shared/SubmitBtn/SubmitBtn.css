@@ -1,0 +1,51 @@
+.estimate-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 214px;
+    background: #5CDD80;
+    padding: 14px 0;
+    border-radius: 28px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.estimate-btn-container:hover {
+    transition: 3s;
+    background: #52ff83;
+}
+
+.d-estimate-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 214px;
+    background: #5CDD80;
+    padding: 14px 0;
+    border-radius: 28px;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: #3B3C54;
+    opacity: 0.5;
+    cursor: default;
+}
+
+.estimate-btn {
+    background: transparent;
+    color: #3B3C54;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.d-estimate-btn {
+    background: transparent;
+    color: #3B3C54;
+    cursor: default;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+}

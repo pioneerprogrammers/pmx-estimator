@@ -1,0 +1,95 @@
+.estimate-table-section {
+    max-width: 1080px;
+    margin: 40px auto;
+    padding: 0 3rem;
+}
+
+.estimate-table-section>h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #3B3C54;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 4px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px #C2C2C2;
+}
+
+td,
+th {
+    border: 1px solid #C2C2C2;
+    text-align: left;
+    padding: 8px;
+    padding-left: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.risks {
+    margin: 20px 0;
+}
+
+.risks>h4 {
+    text-decoration: underline;
+}
+
+.risk {
+    margin: 8px 0 20px 24px;
+}
+
+.risk>li {
+    margin-top: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    .estimate-table-section {
+        max-width: 100%;
+        padding: 0 6.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .estimate-table-section {
+        padding: 0 5.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .estimate-table-section {
+        padding: 0 4.5rem;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .estimate-table-section {
+        padding: 8px 7.5rem;
+
+    }
+
+    .table-container {
+        overflow-x: auto;
+        border: 1px solid #C2C2C2;
+        border-radius: 4px;
+    }
+
+    .estimate-table-section>table {
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    td,
+    tr {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .estimate-table-section {
+        padding: 8px 2rem;
+    }
+}
