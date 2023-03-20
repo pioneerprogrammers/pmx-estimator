@@ -12,7 +12,7 @@ const Form = ({ setResponse }) => {
     const [checkedValues, setCheckedValues] = useState([]);
     const [country, setCountry] = useState('');
     const [city, setCity] = useState('');
-    const [feet, setFeet] = useState('');
+    const [sqft, setSqft] = useState('');
 
     const [loading, setLoading] = useState(false);
     const [disabledBtn, setDisabledBtn] = useState(true);
@@ -26,8 +26,8 @@ const Form = ({ setResponse }) => {
         setCity(e.target.value);
         setDisabledBtn(false);
     }
-    const handleFeet = (e) => {
-        setFeet(e.target.value);
+    const handleSqft = (e) => {
+        setSqft(e.target.value);
         setDisabledBtn(false);
     }
 
@@ -60,9 +60,9 @@ const Form = ({ setResponse }) => {
         event.preventDefault();
         const userData = {
             residential: selectedBuildingType,
-            india: country,
-            delhi: city,
-            sqft: feet,
+            country: country,
+            city: city,
+            sqft: sqft,
             bedroom: event.target.bedroom.value,
             bathroom: event.target.bathroom.value,
             kitchen: checkedValues.includes("kitchen"),
@@ -75,9 +75,9 @@ const Form = ({ setResponse }) => {
 
         if (!isAllEmpty) {
             setDisabledBtn(true);
-            const { residential, india, delhi, sqft, bedroom, bathroom, kitchen, dining, living, porch, currency } = userData;
+            const { residential, country, city, sqft, bedroom, bathroom, kitchen, dining, living, porch, currency } = userData;
             // create query by using user data
-            const query = `Can you suggest me the detailed estimations in a table of a ${residential} building with to construct in ${delhi}, ${india} with ${bedroom} bedroom, ${bathroom} bathroom${living ? ', living room' : ''}${kitchen ? ', kitchen' : ''}${dining ? ', dining room' : ''}${porch ? ', porch' : ''} of ${sqft} sq feet as stages and activities. then along with the total, display time, number of laborers (mention site engineer number, workers number for stages) and cost (${currency}) for each activity. Don't Mention risks in each activity. Just at the bottom of the table include the potential risks that need to consider.`
+            const query = `Can you suggest me the detailed estimations in a table of a ${residential} building with to construct in ${city}, ${country} with ${bedroom} bedroom, ${bathroom} bathroom${living ? ', living room' : ''}${kitchen ? ', kitchen' : ''}${dining ? ', dining room' : ''}${porch ? ', porch' : ''} of ${sqft} sq feet as stages and activities. then along with the total, display time, number of laborers (mention site engineer number, workers number for stages) and cost (${currency}) for each activity. Don't Mention risks in each activity. Just at the bottom of the table include the potential risks that need to consider.`
 
             setPrompt(query);
             setLoading(true);
@@ -117,12 +117,12 @@ const Form = ({ setResponse }) => {
                                 <option value="residential">Residential</option>
                                 <option value="commercial">Commercial</option>
                             </select>
-                            <label className='common-label' htmlFor="feet">Country</label>
+                            <label className='common-label' htmlFor="country">Country</label>
                             <input onChange={handleCountry} type="text" />
-                            <label className='common-label' htmlFor="feet">City</label>
+                            <label className='common-label' htmlFor="city">City</label>
                             <input onChange={handleCity} type="text" />
-                            <label className='common-label' htmlFor="feet">Total Sqaure feet</label>
-                            <input onChange={handleFeet} type="text" />
+                            <label className='common-label' htmlFor="sqft">Total Sqaure feet</label>
+                            <input onChange={handleSqft} type="text" />
                         </div>
                     </div>
                     <div className="form-flex-item">
